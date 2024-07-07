@@ -9,6 +9,7 @@ body{
     background-image: url(https://getwallpapers.com/wallpaper/full/6/a/9/1173035-cold-weather-wallpaper-1920x1200-1080p.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    backdrop-filter: blur(10px);
     
 }
 
@@ -72,7 +73,7 @@ header{
 }
 .current-wether{
     background: #5372f077;
-    padding: 20px 70px 20px 20px;
+    padding: 20px 20px 20px 20px;
     display: flex;
     border-radius: 5px;
     color: #fff;
@@ -83,6 +84,12 @@ header{
 .current-wether h3{
     font-size: 1.7rem;
 
+}
+.details h3{
+    width: 100%;
+}
+.icon h6{
+    width: 100%;
 }
 .weather-data h6{
     font-size: 0.6rem;
@@ -105,16 +112,35 @@ header{
 .wether-cards{
     display: flex;
     gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    
 }
 .card{
     background: #6c757d;
     list-style: none;
     color: #fff;
-    padding: 18px,16px;
+    padding-bottom: 20px;
+    padding-top: 10px;
     border-radius: 5px;
-    width: 150px;
     text-align: center;
-    width: calc(100% / 5);
+    width: 100px;
+    
+    
+}
+.card h5{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+    width: 100%;
+    font-size: 10px;
+    
+}
+.card img{
+    margin-left: 30px;
+    margin-right: 30px;
 }
 .wether-cards .card img{
     max-width: 70px;
@@ -123,7 +149,7 @@ header{
 
 
 
-@media (max-width:600px){
+@media (max-width:850px){
     .wether-input{
         width: 100%;
     }
@@ -138,15 +164,19 @@ header{
     }
 
     .wether-cards{
-        overflow-y: scroll;
+        flex-wrap: wrap;
         width: 100%;
+        font-size: 20px;
+    }
+    .card{
+        width: 100px;
     }
     .current-wether{
         width: 100%;
         padding: 10px;
     }
     .current-wether h3{
-        font-size: 15px;
+        font-size: 20px;
     
     }
     .current-wether .icon img{
@@ -183,7 +213,7 @@ header{
         width: 100%;   
     }
     .heading h3{
-        font-size: 18px;
+        font-size: 25px;
         
     }
 }
