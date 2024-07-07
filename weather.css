@@ -9,7 +9,9 @@ body{
     background-image: url(https://getwallpapers.com/wallpaper/full/6/a/9/1173035-cold-weather-wallpaper-1920x1200-1080p.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     backdrop-filter: blur(10px);
+    overflow: hidden;
     
 }
 
@@ -185,8 +187,11 @@ header{
     body{
         background-image: url(https://cdn6.f-cdn.com/contestentries/329593/14489232/569add2d8d3cb_thumb900.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size:cover;
+        backdrop-filter: blur(10px);
+        background-attachment: fixed;
         height: 100%;
+        overflow: visible;
     }
     .current-wether{
         margin-top: 10px;
@@ -216,12 +221,13 @@ header{
     
     }
     .wether-cards{
+        flex-wrap: wrap;
         flex-direction: row;
-        overflow-x: scroll;
         
     }
     .card{
-        width: 150px;  
+        width: 150px; 
+         
     }
     .card h5{
         padding-left: 10px;
