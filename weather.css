@@ -131,7 +131,7 @@ header{
     justify-content: center;
     align-items: center;
     width: 100%;
-    overflow-y: scroll;
+    
     
     
 }
@@ -217,6 +217,7 @@ header{
     }
     .wether-cards{
         flex-wrap: wrap;
+        overflow-y: scroll;
         
     }
     .card{
