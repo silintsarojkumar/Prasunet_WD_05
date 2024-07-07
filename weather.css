@@ -78,7 +78,7 @@ header{
 }
 .current-wether{
     background: #5372f077;
-    margin-top: 40px;
+    margin-top: 18px;
     padding: 20px 20px 20px 20px;
     display: flex;
     border-radius: 5px;
@@ -131,6 +131,7 @@ header{
     justify-content: center;
     align-items: center;
     width: 100%;
+    overflow-y: scroll;
     
     
 }
