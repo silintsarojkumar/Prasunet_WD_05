@@ -216,7 +216,7 @@ header{
     
     }
     .wether-cards{
-        flex-wrap: wrap;
+        flex-direction: row;
         overflow-x: scroll;
         
     }
